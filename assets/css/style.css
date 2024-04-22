@@ -1292,17 +1292,6 @@ p {
   border-left: 3px solid var(--main-red);
   padding-left: 5px;
 }
-/* none */
-/* .main-banner-section,
-.about-section,
-.why-attend-section,
-.multimedia-section,
-.why-exhibit-section,
-.insights-section,
-.partners-section,
-.in-event-section {
-  display: none;
-} */
 
 /* tab-responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1322,3 +1311,15 @@ p {
     display: block;
   }
 }
+
+/* none */
+/* .main-banner-section,
+.about-section,
+.why-attend-section,
+.multimedia-section,
+.why-exhibit-section,
+.insights-section,
+.partners-section,
+.in-event-section {
+  display: none;
+} */
