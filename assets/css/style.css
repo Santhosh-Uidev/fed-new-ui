@@ -1293,7 +1293,7 @@ p {
   padding-left: 5px;
 }
 /* none */
-.main-banner-section,
+/* .main-banner-section,
 .about-section,
 .why-attend-section,
 .multimedia-section,
@@ -1302,7 +1302,7 @@ p {
 .partners-section,
 .in-event-section {
   display: none;
-}
+} */
 
 /* tab-responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
