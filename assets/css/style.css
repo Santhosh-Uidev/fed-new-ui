@@ -11,6 +11,7 @@
   font-family: "Big-Jhon";
   src: url(../fonts/B_S/BIG\ JOHN.otf);
 }
+/* font-family: "Reem Kufi Fun", sans-serif; */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +47,16 @@ p {
 }
 
 /* common-styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  backdrop-filter: blur(1.2rem);
+}
 .move {
   transition: all 0.1s ease;
 }
@@ -1012,6 +1023,9 @@ p {
 }
 
 /* video-modal */
+.video-modal {
+  z-index: 99999999 !important;
+}
 .video-modal .modal-content {
   background-color: transparent;
   border: none;
@@ -1029,6 +1043,7 @@ p {
 .speaker-section {
   background: url(../images/sample-bg-2.jpg) no-repeat center;
   background-size: cover;
+  overflow: hidden;
 }
 .speaker-section .main-title {
   color: #fff;
@@ -1124,6 +1139,9 @@ p {
   border: 1px solid #000;
 }
 /* speaker-modal */
+.speaker-modal {
+  z-index: 99999999 !important;
+}
 .speaker-modal .modal-content {
   background-color: transparent;
   border: none;
@@ -1520,6 +1538,7 @@ p {
 .ticket-plan-section {
   background: url(../images/ticket-bg.jpg) no-repeat right;
   background-size: cover;
+  overflow: hidden;
 }
 
 .ticket-plan-section .main-title {
@@ -1874,6 +1893,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  overflow: hidden;
 }
 .organised-section .main-title {
   color: #fff;
@@ -1956,6 +1976,7 @@ p {
   background-color: #0a1034;
   position: relative;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .fl-img-1 {
   position: absolute;
@@ -2051,7 +2072,8 @@ p {
 }
 /* none */
 
-/* .about-section,
+/*.main-banner-section,
+ .about-section,
 .why-attend-section,
 .multimedia-section,
 .speaker-section,
@@ -2065,7 +2087,102 @@ p {
 .footer-section {
   display: none;
 } */
-/* .main-banner-section, */
+
+/* sup-page-styles */
+/* speaker-page */
+/* sub-banner-section */
+.sub-banner-section {
+  min-height: 40vh;
+  padding: 150px 0 100px;
+  background: url(../images/sample-bg-1.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.sub-banner-title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 40px;
+  width: fit-content;
+  min-width: 50%;
+  margin-inline: auto;
+  border-radius: 10px;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background: rgb(0 0 0 / 82%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 2px solid rgb(255, 255, 255);
+}
+/* main-speaker-section */
+.main-speaker-section {
+  background-color: #eeeeeeee;
+  background: url(../images/team-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.main-speaker-section .main-title {
+  color: var(--main-blue);
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.main-speaker-section .main-title::first-letter {
+  color: var(--main-red);
+  font-size: 4rem;
+}
+/* main-speaker-section */
+.main-sponsor-section {
+  background-color: #eeeeeeee;
+  overflow: hidden;
+  background: url(../images/sponsor-bg1.jpg) no-repeat center;
+  background-size: cover;
+}
+.main-sponsor-section .main-title {
+  color: var(--main-blue);
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.main-sponsor-section .main-title::first-letter {
+  color: var(--main-red);
+  font-size: 4rem;
+}
+.sponsor-title {
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  background: linear-gradient(100.07deg, #121e52 0%, #e50134 176.51%);
+  width: fit-content;
+  position: relative;
+  font-family: "Reem Kufi Fun", sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+}
+.sponsor-title::before {
+  position: absolute;
+  top: 48%;
+  left: 100%;
+  width: 100%;
+  content: "";
+  height: 3px;
+  background-color: #872448;
+}
+.sponsor-title::after {
+  position: absolute;
+  top: 48%;
+  right: 100%;
+  width: 100%;
+  content: "";
+  height: 3px;
+  background-color: #1b1e51;
+}
+.main-sponsor-section .sponsor-box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 
 /* tab-responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2438,6 +2555,9 @@ p {
   .about-right {
     padding-top: 20px;
   }
+  .ns-box:nth-child(3) {
+    right: 16%;
+  }
   /* .why-to-attend */
   .why-attend-section {
     display: flex;
@@ -2457,6 +2577,10 @@ p {
     margin-inline: auto;
   }
   /* speaker-section */
+  .speaker-box::after {
+    bottom: 40%;
+    right: -50%;
+  }
   .speaker-fit {
     width: 80%;
   }
@@ -2524,6 +2648,11 @@ p {
   .organised-box {
     width: 100%;
   }
+  .organised-box::before,
+  .organised-box::after {
+    width: 70px;
+    height: 70px;
+  }
   /* footer-section */
   .footer-fit {
     width: 50%;
@@ -2538,5 +2667,13 @@ p {
   }
   .disclaimer-text {
     margin-top: 0px;
+  }
+  /* subpages-styles */
+  /* sub-banner-styles */
+  .sub-banner-section {
+    min-height: 36vh;
+  }
+  .sub-banner-title {
+    font-size: 2rem;
   }
 }
