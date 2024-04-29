@@ -492,6 +492,9 @@ p {
   font-weight: 700;
   font-family: "Avenir-Book";
 }
+.main-banner-btns {
+  display: flex;
+}
 .banner-button {
   padding: 1em 2em;
   border: none;
@@ -509,6 +512,8 @@ p {
   font-size: 0.8rem;
   font-weight: 700;
   margin-right: 20px;
+  display: block;
+  width: fit-content;
 }
 
 .banner-button:hover {
@@ -551,6 +556,9 @@ p {
   outline: 2px solid #e50134;
   font-size: 0.8rem;
   font-weight: 700;
+  display: block;
+  width: fit-content;
+  background-color: #fff;
 }
 
 .banner-button1:hover {
@@ -2073,24 +2081,6 @@ p {
   font-weight: 700;
   font-size: 15px;
 }
-/* none */
-
-/*.main-banner-section,
- .about-section,
-.why-attend-section,
-.multimedia-section,
-.speaker-section,
-.insights-section,
-.sponsors-section,
-.partners-section,
-.why-exhibit-section,
-.our-team-section,
-.in-event-section,
-.organised-section,
-.footer-section {
-  display: none;
-} */
-
 /* sup-page-styles */
 /* speaker-page */
 /* sub-banner-section */
@@ -2108,6 +2098,7 @@ p {
   width: fit-content;
   min-width: 50%;
   margin-inline: auto;
+  text-decoration: underline;
   /* border-radius: 10px; */
   font-family: "Reem Kufi Fun", sans-serif;
   font-weight: 700;
@@ -2187,6 +2178,95 @@ p {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
+/* become-sponsor-page */
+/* become-form */
+.become-form-section {
+  position: relative;
+  overflow: hidden;
+  background: url(../images/in-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.become-form-section .move {
+  position: absolute;
+}
+.bs-img-1 {
+  width: 200px;
+  bottom: -3%;
+  right: -2%;
+}
+.bs-img-2 {
+  width: 8rem;
+  top: -2%;
+  left: -2%;
+  /* filter: drop-shadow(-3px -0px 0px rgb(94, 94, 94)); */
+}
+.bs-img-3 {
+  width: 570rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  filter: drop-shadow(2px 4px 0px #fff);
+}
+.become-form-section .container {
+  z-index: 1;
+  position: relative;
+}
+.become-form-section .main-title {
+  color: var(--main-blue);
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.become-form-section .main-title::first-letter {
+  color: var(--main-red);
+  font-size: 4rem;
+}
+.become-form {
+  padding: 30px;
+  background: rgb(0 0 0 / 10%);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+.become-form .form-floating input,
+.become-form .form-floating select,
+.become-form .form-floating textarea {
+  border: none;
+  border-left: 2px solid var(--main-red);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.become-form .form-floating input:focus,
+.become-form .form-floating select:focus,
+.become-form .form-floating textarea:focus {
+  box-shadow: none;
+  border: none;
+  border-left: 3px solid var(--main-red);
+  border-color: var(--main-red);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/* none */
+
+/*.main-banner-section,
+ .about-section,
+.why-attend-section,
+.multimedia-section,
+.speaker-section,
+.insights-section,
+.sponsors-section,
+.partners-section,
+
+
+.in-event-section,
+.footer-section  */
+
+/* .organised-section,
+.why-exhibit-section,
+.our-team-section {
+  display: none;
+} */
 /* tab-responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .web-view {
@@ -2426,6 +2506,13 @@ p {
     padding: 10px 0;
     text-align: center;
   }
+  /* become-form-section */
+  .bs-img-2 {
+    width: 6rem;
+  }
+  .bs-img-1 {
+    width: 100px;
+  }
 }
 /* mobile-resposive */
 @media only screen and (max-width: 767px) {
@@ -2547,7 +2634,7 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .main-banner-btns button {
+  .main-banner-btns a {
     width: 60% !important;
     margin: 10px auto 0;
   }
@@ -2688,5 +2775,15 @@ p {
   }
   .sub-banner-title {
     font-size: 2rem;
+  }
+  /* become-form-section */
+  .become-form {
+    padding: 20px;
+  }
+  .bs-img-2 {
+    width: 4rem;
+  }
+  .bs-img-1 {
+    width: 100px;
   }
 }
