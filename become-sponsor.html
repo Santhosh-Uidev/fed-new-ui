@@ -26,122 +26,87 @@
 </head>
 
 <body>
-    <!-- header-top -->
-    <div class="header-top">
-        <div class="container">
-            <div class="inner-container">
-                <div class="top-left">
-                    <ul class="contact-list-two">
-                        <li><strong>Address :</strong> Dubai World Trade Centre </li>
-                        <li><strong>Date &amp; Time :</strong>7 - 8 October 10:00AM - 6:00PM</li>
+    <!-- header -->
+    <header>
+        <div class="header-top ">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="top-left">
+                        <ul class="contact-list-two">
+                            <li><strong>Address :</strong> Dubai World Trade Centre </li>
+                            <li><strong>Date &amp; Time :</strong>7 - 8 October 10:00AM - 6:00PM</li>
 
-                    </ul>
-                </div>
-                <div class="top-right">
-                    <ul class="social-icon-three">
-                        <li><a href="https://www.facebook.com/TheForexExpo"><span class="fab fa-facebook-f"
-                                    aria-hidden="true"></span></a></li>
-                        <li><a href="https://www.instagram.com/theforexexpo/"><span class="fab fa-instagram"
-                                    aria-hidden="true"></span></a></li>
-                        <li><a href="https://twitter.com/theforexexpo"><span class="fab fa-twitter"
-                                    aria-hidden="true"></span></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/company/theforexexpo/"><span class="fab fa-linkedin"
-                                    aria-hidden="true"></span></a></li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="top-right d-lg-block d-none">
+                        <ul class="social-icon-three">
+                            <li><a href="https://www.facebook.com/TheForexExpo"><span class="fab fa-facebook-f"
+                                        aria-hidden="true"></span></a></li>
+                            <li><a href="https://www.instagram.com/theforexexpo/"><span class="fab fa-instagram"
+                                        aria-hidden="true"></span></a></li>
+                            <li><a href="https://twitter.com/theforexexpo"><span class="fab fa-twitter"
+                                        aria-hidden="true"></span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/company/theforexexpo/"><span class="fab fa-linkedin"
+                                        aria-hidden="true"></span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- mobile-view -->
-    <!-- header -->
-    <section class="mobile-view">
-        <nav class="navbar header  fixed-top">
-            <div class="container-fluid">
+        <nav class="navbar header navbar-expand-lg">
+            <div class="container-fluid px-lg-4">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/images/white-logo.svg" alt="">
+                    <div class="logo-fit">
+                        <img src="assets/images/white-logo.svg" alt="">
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
-                <!-- <div id="btn-menu-responsive" class="btn-menu"><span></span></div>
-        <div id="text">Menu</div>  -->
-                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/images/white-logo.svg"
+                                alt=""></div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">About Us</a>
+                                <a class="nav-link" href="index.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="speaker.html">Speakers</a>
+                                <a class="nav-link" href="speaker.html">Speakers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="sponsor.html">Sponsors</a>
+                                <a class="nav-link" href="sponsor.html">Sponsors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Partners</a>
+                                <a class="nav-link" href="index.html">Partners</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Floor Plan</a>
+                                <a class="nav-link" href="#floorplan">Floorplan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Side Event</a>
+                                <a class="nav-link" href="#floorplan">Side event</a>
                             </li>
-                        </ul>
-                        <ul class="nav-buttons list-unstyled justify-content-center">
-                            <li><a href="become-sponsor.html" class="btn become-btn">Become Sponsors</a></li>
-                            <li><a href="https://register.theforexexpo.com/" class="btn reg-btn-h">Register Now</a></li>
+                            <li><a href="become-sponsor.html" class="header-btns header-btn-1 btn">Become sponsor</a>
+                            </li>
+                            <li><a href="https://register.theforexexpo.com/"
+                                    class="header-btns header-btn-2 btn">register to
+                                    visit</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-    </section>
-    <!-- web-view -->
-    <section class="web-view">
-        <!-- header -->
-        <div class="header">
-            <div class="container-fluid px-lg-5">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="logo-sector">
-                            <a href="index.html">
-                                <img src="assets/images/white-logo.svg" alt="" class="logo" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-10 align">
-                        <div class="header-right">
-                            <ul class="list-unstyled d-flex">
-                                <li><a href="index.html" class="pg-link">Home</a></li>
-                                <li><a href="index.html" class="pg-link">About Us</a></li>
-                                <li><a href="speaker.html" class="pg-link">Speakers</a></li>
-                                <li><a href="sponsor.html" class="pg-link">Sponsors</a></li>
-                                <li><a href="index.html" class="pg-link">Partners</a></li>
-                                <li><a href="index.html" class="pg-link">Floor Plan</a></li>
-                                <li><a href="index.html" class="pg-link">Side Event</a></li>
-                                <li>
-                                    <a href="become-sponsor.html" class="btn become-btn">Become Sponsors</a>
-                                </li>
-                                <li><a href="https://register.theforexexpo.com/" class="btn reg-btn-h">Register Now</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </header>
     <!-- countdown-section -->
     <section class="countdown-section">
         <div class="container">
@@ -560,16 +525,6 @@
     </script>
     <script src="https://kit.fontawesome.com/f2e27613ce.js" crossorigin="anonymous"></script>
     <script>
-        //             $(document).ready(function () {
-        //                 $(window).scroll(function () {
-        //                     var scroll = $(window).scrollTop();
-        //                     if (scroll > 100) {
-        //                         $(".header").css("background", "#000");
-        //                     } else {
-        //                         $(".header").css("background", "none");
-        //                     }
-        //                 });
-        //             });
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
