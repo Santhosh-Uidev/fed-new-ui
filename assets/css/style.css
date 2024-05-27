@@ -2374,7 +2374,8 @@ header {
   .main-banner-btns {
     display: flex;
     flex-direction: row;
-  }
+    justify-content: space-evenly;
+}
   .main-banner-btns button {
     width: 45%;
     margin: 10px auto 0;
